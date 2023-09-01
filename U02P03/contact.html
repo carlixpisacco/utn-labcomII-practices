@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Práctica 3 </title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Para comunicarte:</h1>
+    </header>
+
+    <!-- Navegación / cotenedor izquierdo -->
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h2>¡Hola amigos!</h2>
+                <p> Podes comunicarte completando el siguiente formulario:</p>
+            </section>
+
+            <section>
+                <form action="">
+                <tr>
+                    <td> <label for="nombre"> <b> Nombre: </b></label></td>
+                    <td> <input type="text" name="nombre" required></td>
+                </tr>
+                <br>
+                <tr>
+                    <td> <label for="mail"> <b> Email: </b></label></td>
+                    <td> <input type="text" name="email" required></td>
+                </tr>
+                <br>
+                <tr>
+                    <td> <label for="edad"> <b> Edad: </b></label></td>
+                    <td> <input type="number" name="edad"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td> <label for="color_fav"> <b> Color preferido: </b></label></td>
+                    <td> <input type="color" name="color_fav"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td> <label for="comentarios"> <b> Comentario: </b></label></td>
+                    <td> <input type="text" name="comentarios:" required minlength="10"></td>
+                </tr>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+            </section>
+        </main>
+
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>
+                En esta sección podrás comunicarte conmigo.
+            </p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© copyright labcomII.com</p>
+    </footer>
+</body>
+
+</html>

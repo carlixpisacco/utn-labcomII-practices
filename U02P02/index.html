@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 Ejercicios 3 y 4</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Tabla básica </h1>
+    <table>
+        <thead>
+            <tr>
+                <th><b> Nombre </b></th>
+                <th><b> Apellido </b></th>
+                <th><b> Dni </b></th>
+                <th><b> Condición </b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Clara </td>
+                <td> Razzetto </td>
+                <td> 37545106 </td>
+                <td> Reprobado </td>
+            </tr>
+            <tr>
+                <td> Kevin </td>
+                <td> Rodriguez </td>
+                <td> 39035623 </td>
+                <td> Aprobado </td>
+            </tr>
+            <tr>
+                <td> Martina </td>
+                <td> Dominguez </td>
+                <td> 38456123 </td>
+                <td> Aprobado </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h1> Tabla compleja </h1>
+    <table>
+        <caption>
+            <h3> Lista de actores </h3>
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="2"><b> Nombre y apellido </b></th>
+                <th><b> Edad </b></th>
+                <th><b> Últimas dos películas </b></th>
+                <th><b> Fecha de estreno </b></th>
+                <th><b> Perfil de instagram </b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"> Mía </td>
+                <td rowspan="2"> Goth </td>
+                <td rowspan="2"> 29 años </td>
+                <td> Pearl </td>
+                <td> 2022 </td>
+                <td rowspan="2"><a href="https://www.instagram.com/miagoth0/ " target="_blank"
+                        title="ir al perfil de instagram"> Perfil de instagram de Mía </a></td>
+            </tr>
+            <tr>
+                <td> Infinity Pool </td>
+                <td> 2023 </td>
+            </tr>
+            <tr>
+                <td rowspan="2"> Ryan </td>
+                <td rowspan="2"> Gosling </td>
+                <td rowspan="2" >42 años </td>
+                <td> The Gray Man </td>
+                <td> 2022 </td>
+                <td rowspan="2"><a href="https://www.instagram.com/ryangoslinguk/" target="_blank"
+                        title="ir al perfil de instagram"> Perfil de instagram de Ryan </a></td>
+            </tr>
+            <tr>
+                <td> Barbie </td>
+                <td> 2023 </td>
+            </tr>
+            <tr>
+                <td rowspan="2"> Toni </td>
+                <td rowspan="2"> Collette </td>
+                <td rowspan="2"> 50 años </td>
+                <td> El callejón de las almas perdidas </td>
+                <td> 2021 </td>
+                <td rowspan="2"><a href="https://www.instagram.com/toni_collette_official" target="_blank"
+                        title="ir al perfil de instagram"> Perfil de instagram de Toni </a></td>
+            </tr>
+            <tr>
+                <td> Mafia Mamma </td>
+                <td> 2023 </td>
+            </tr>
+            <tr>
+                <td rowspan="2"> Leonardo </td>
+                <td rowspan="2"> DiCaprio </td>
+                <td rowspan="2"> 48 años </td>
+                <td> Don't look up </td>
+                <td> 2021 </td>
+                <td rowspan="2"><a href="https://www.instagram.com/leonardodicaprio" target="_blank"
+                        title="ir al perfil de instagram"> Perfil de instagram de Leonardo</a></td>
+            </tr>
+            <tr>
+                <td> Killers of the Flower Moon </td>
+                <td> 2023 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6"> <b><i> cantidad de películas en lista:</i> 8 </b> </td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+</body>
+</html>

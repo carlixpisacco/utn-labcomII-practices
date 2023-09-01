@@ -1,0 +1,74 @@
+* {
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    font-size: 24 px;
+    color: #242424;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul,
+li,
+.link_naranja {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+a {
+    font-weight: 780;
+}
+
+ul li .link_naranja {
+    color: orangered;
+    text-decoration: underline;
+   
+}
+
+.prov_verde,
+.link_verde {
+    color: green
+}
+
+.link_verde {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+ul {
+    margin-left: 100px;
+    padding: 20px;
+    border-style: solid;
+    border-color: blue;
+    max-width: 40%;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+li {
+    margin: 10px;
+}
+
+ul li:hover a{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+ /*esta última parte me ayude de internet, no sabía bien como ejecutar el :hover ya que solo
+ me ponia fondo o a la linea sin tomar el link o le ponia fondo unicamente al link, encontré esta
+ solución pero no entiendo bien porque a la "a" de link la pone luego del hover*/
+
+
+

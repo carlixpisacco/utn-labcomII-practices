@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 Ejercicio 6</title>
+</head>
+
+<body>
+    <h1> Bienvenido a la página de becas </h1>
+    <p> Por favor complete el siguiente <ins>formulario</ins> para poder acceder a su <b>beca:</b></p>
+
+    <form action="">
+        <fieldset>
+            <legend><b> Datos personales </b></legend>
+            <br>
+            <label for="est_academico"> Estado académico </label>
+            <input type="text" name="est_academico" size="15" value="ESTUDIANTE" readonly />
+            <br><br>
+            <label for="nombre_completo"> Nombre completo: </label>
+            <input type="text" name="nombre_completo" size="15" />
+            <br><br>
+            <label for="email"> Email: </label>
+            <input type="text" name="email" size="15" />
+            <br><br>
+            <label for="edad"> Edad: </label>
+            <input type="number" name="edad" size="5" />
+            <br><br>
+            <label for="seleccionable_nacionalidad" id="seleccionable_nacionalidad"> Nacionalidad: </label>
+            <select name="nacionalidad">
+                <option value="Argentina"> Argentina </option>
+                <option value="Uruguaya"> Uruguaya </option>
+                <option value="Chilena"> Chilena </option>
+                <option value="Brasilera"> Brasilera </option>
+            </select>
+            <br><br>
+            <label for="seleccionable_condlaboral" id="seleccionable_condlaboral"> Condición laboral: </label>
+            <select name="seleccionable_condlaboral" id="seleccionable_condlaboral">
+                <option value="Desempleado"> Desempleado </option>
+                <option value="En búsqueda laboral"> En búsqueda laboral </option>
+                <option value="Trabajo part time"> Trabajo part time </option>
+                <option value="Trabajo full time"> Trabajo full time </option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b> Gustos personales </b></legend>
+            <br>
+            <label for="gustos_musicales"> Gustos musicales: </label>
+            <input type="text" name="gustos_musicales" size="30" />
+            <br><br>
+            <label for="seleccionable_comidasfav" id="seleccionable_comidasfav"> Comida favorita: </label>
+            <select name="seleccionable_comidasfav" id="seleccionable_comidasfav">
+                <option value="Minutas"> Minutas </option>
+                <option value="Pastas"> Pastas </option>
+                <option value="Sandwiches"> Sandwiches </option>
+                <option value="Vegetariano/vegano"> Vegetariano/vegano </option>
+                <option value="Pescados"> Pescados </option>
+                <option value="Carnes Rojas"> Carnes rojas </option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+
+        <label for="checkbox"> Recordar datos </label>
+        <input type="checkbox" name="checkbox_datos" size="20" />
+        <br><br>
+
+        <input type="submit" name="enviar" value="Enviar" size="20" />
+    </form>
+</body>
+</html>
