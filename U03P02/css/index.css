@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+    /*sirve para calcular el ancho y alto de un elemento en la pagina web, en relacion a su contenido y bordes*/
+}
+
+*,
+*::before,
+*::after
+
+/*El asterisco (*) es un selector universal en CSS, afectará a cada elemento HTML en la página.*/
+/**::before y *::after: pseudo-elementos que permiten agregar contenido adicional antes o después del contenido real de un elemento HTML, respectivamente.*/
+    {
+    box-sizing: inherit;
+    /* hereda el estilo de html, que es el elemento padre (border-box)*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*estilo que voy a aplicar a todo lo que hay en el elemento body en el html*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    width: 100%;
+    /*determina el ancho en porcentaje total, si pongo 50% el bloque queda a la mitad*/
+    background-color: rgb(243, 161, 114);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    /*a esta declaración hay que ponerla en el elemento padre de los elementos que deseamos diseñar, todos sus hijos se convierten en elementos flexibles*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #dd1212f1;
+    font-weight: 700;
+    display: inline-block;
+    /*display es la propiedad mas importante para controlar estructuras*/
+}
+
+.logo i.icono{
+    margin-left: 10px;
+    font-size: 20px;
+    color:red
+}
+
+.nav-links {
+    list-style: none;
+    /*va a eliminar los puntos de la lista*/
+    display: flex;
+    /* vuelvo a ponerla aca, porque en el nav solo afecta a "a" y "ul"; "li" seria un nieto, no un hijo, por eso vuelvo a aplicarlo aca para que afecte a los "li"*/
+
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #870000;
+}
+
+.nav-item:hover {
+    background-color: rgb(128, 128, 37);
+    }
+.nav-item:hover a {
+    background-color: rgb(128, 128, 37);
+    }
+
+.nav-item-login{
+  font-style: oblique;
+}
+.nav-item-login:hover a {
+background-color: rgb(139, 68, 82);
+}
+
+/* ESTO LO AGREGO SI DECIDO PONER ICONO 
