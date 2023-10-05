@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 4) Cargar por teclado los siguientes datos de un alumno:
+•	Nombre
+•	Apellido
+•	Domicilio
+•	Curso
+•	Carrera
+•	Materia 
+•	Nota primer parcial
+Mostrar todos los datos por pantalla uno debajo del otro.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 4</title>
+</head>
+<script>
+    function imprimirDatos(){
+    let nombre = document.getElementById('nombre').value;
+    let apellido = document.getElementById('apellido').value;
+    let domicilio = document.getElementById('domicilio').value;
+    let listaCurso = document.getElementById("curso");
+    let valorCurso = listaCurso.options[listaCurso.selectedIndex].text;
+    let listaCarrera = document.getElementById("carrera");
+    let valorCarrera = listaCarrera.options[listaCarrera.selectedIndex].text;
+    let materia = document.getElementById('materia').value;
+    let nota = document.getElementById('nota').value;
+    var mensaje = "Nombre: " + nombre + "\nApellido: " + apellido + "\nDomicilio: " + domicilio + "\nCurso: " + valorCurso + "\nCarrera: " + valorCarrera + "\nMateria: " + materia + "\nNota: " + nota;
+
+    alert(mensaje) //tener en cuentra que no puedo hacer saltos de linea en el alert
+    //los hago en una variable por fuera y luego imprimo la variable. 
+}
+</script>
+
+<body>
+    <h1>Datos del alumno:</h1>
+    <form action="">
+        <div><label for="nombre"> Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre"/>
+        </div>
+
+        <div><label for="apellido"> Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido"/>
+        </div>
+
+        <div><label for="domicilio"> Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" placeholder="Ingrese domicilio"/>
+        </div>
+
+        <div><label for="curso"> Curso:</label>
+            <select name="curso" id="curso">
+                <option disabled selected> -- Seleccione una
+                    opción -- </option>
+                <option> Mañana</option>
+                <option> Tarde </option>
+                <option> Noche</option>
+            </select>
+        </div>
+
+        <div><label for="carrera"> Carrera:</label>
+            <select name="carrera" id="carrera">
+                <option disabled selected> -- Seleccione una
+                    opción -- </option>
+                <option> Derecho</option>
+                <option> Ingeniería</option>
+                <option> Arquitectura</option>
+                <option> Diseño Gráfico</option>
+                <option> Psicología </option>
+            </select>
+        </div>
+
+        <div><label for="materia"> Materia: </label>
+            <input type="text" id="materia" name="materia" placeholder="Ingrese materia"/>
+        </div>
+
+        <div><label for="nota"> Nota primer parcial:</label>
+            <input type="number" id="nota" name="nota" placeholder="Nota primer parcial" min="1" max="10"/>
+        </div>
+
+        <div>
+            <button type="button" onclick="imprimirDatos()"> Imprimir datos </button>
+        </div>
+</body>
+
+</html>

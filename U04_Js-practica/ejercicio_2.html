@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 2) Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+</head>
+
+<script>
+function calcularNum(){
+    num=document.getElementById("num").value;
+
+    if (num < 0){
+        alert("El número ingresado es negativo");
+    } else if (num > 0){
+        alert("El número ingresado es positivo");
+    } else {
+        alert("El número ingresado es 0")
+    }
+}
+</script>
+
+<body>
+    <form action="">
+        <div><label for="num"> Número 1:</label>
+            <input type="number" id="num" name="num" placeholder="ingrese un número"/>
+        </div>
+        <div>
+            <button type="button" onclick="calcularNum()"> Calcular si es positivo, negativo o 0 </button>
+        </div>
+</body>
+
+</html>

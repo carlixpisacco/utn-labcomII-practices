@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 6) Escribir un programa que pida al usuario que ingrese una palabra clave en un input. 
+    El usuario debe ingresar la palabra y presionar un botón “Validar”.
+Si la palabra clave coincide, mostrar en pantalla un mensaje en verde con el texto 
+"Acceso concedido" y si no, mostrar un mensaje en rojo con el texto "Clave incorrecta". 
+Si falla tres veces consecutivas, se emitirá una Alerta, con el texto “Intruso”. 
+Al ingresar la clave correctamente el contador de intentos fallidos consecutivos se resetea.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 6</title>
+</head>
+
+<script> 
+var clave = "1234";
+var intentos = 0;
+
+function validarPass(){
+    let pass = document.getElementById('contra').value;
+    if (pass === clave){
+        document.getElementById('mensaje-acceso').innerHTML = '<b style="color:green;"> Acceso concedido </b>'; //agregue estilo en la misma linea de codigo, lo saque de internet!!
+        intentos = 0;
+    }
+    else{
+        intentos ++;
+        document.getElementById('mensaje-acceso').innerHTML = '<b style="color:red;"> Clave incorrecta </b>';
+    }
+
+    if (intentos > 3 ){
+        alert( "Intruso!!")
+    }
+}
+
+</script>
+
+<body>
+    <h1>Bienvenido</h1>
+    <div id="formulario">
+        <form action="">
+            <div id="pass">
+                <label for="contra"> Ingrese la palabra clave:</label>
+                <input type="password" id="contra" name="contra"/>
+            </div>
+            <div id="button">
+                <button type="button" onclick="validarPass()"> Ingresar </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="mensajes">
+        <p id="mensaje-acceso"> </p>
+    </div>
+
+</body>
+
+</html>

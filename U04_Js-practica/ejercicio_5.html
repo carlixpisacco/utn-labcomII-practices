@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 5) El usuario debe ingresar un número en un prompt, 
+    el prompt debe volver a abrirse para pedir el valor si no es un numero >0. 
+    Cuando el numero sea >0 calcular el factorial y mostrarlo con una alerta.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 5</title>
+</head>
+
+<script>
+    var i = 0;
+    while (i == 0) { //ACORDARME DEL DOBLE == SINO NUNCA VA A ENTRAR!!!
+        var num = prompt("Ingrese un número:"); 
+        var numero = parseInt(num); //es necesario convertirlo para las comparaciones ya que 
+        //el prompt toma como cadena de texto
+
+        if (numero > 0) {
+            var factorial = 1;
+            for (var i = 1; i <= numero; i++) {
+                factorial *= i;
+            }
+            alert("El factorial de " + numero + " es: " + factorial);
+            break;
+        } else if (numero == 0) {
+            alert("El factorial de 0 es 1");
+            break;
+        }
+        else {
+            alert("No puede calcularse el factorial de un número negativo.")
+        }
+    }
+
+</script>
+
+<body>
+    <h1> Saludos jeje </h1>
+</body>
+
+</html>
