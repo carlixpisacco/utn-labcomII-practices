@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 2)	Realizar un programa que una vez que solicita dos números por
+teclado, los pasa a una función donde se calcula la suma de éstos. La función
+devolverá dicho resultado, pero en el caso de que salga negativo,
+deberá cambiarle el signo antes de devolverlo. Imprimir el
+resultado en la función principal. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+</head>
+
+<script>
+
+    function calcularSuma(num1, num2){
+        let suma = num1 + num2;
+        if (suma < 0){
+            suma = -(suma);
+        }
+        return suma //no se bien como utilizar callback en esta función.
+    }
+
+    function mostrarResultado(){
+        num1 = parseFloat (document.getElementById('num1').value);
+        num2 = parseFloat(document.getElementById('num2').value);
+        let resultado = calcularSuma(num1, num2);
+        document.getElementById("resultado").innerHTML = "la suma es: " + resultado;
+    }
+</script>
+
+<body>
+    <div id="numeros">
+        <div>
+            <label for="num1"> Ingrese un número:</label>
+            <input type="number" id="num1" name="num1" placeholder="Ingrese el primer número" />
+        </div>
+        </div>
+            <label for="num2"> Ingrese un número:</label>
+            <input type="number" id="num2" name="num2" placeholder="Ingrese el segundo número" />
+        </div>
+        <div>
+            <button type="button" onclick="mostrarResultado()"> Sumar </button>
+        </div>
+    <div>
+    <div id="resultado">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 1)	Realizar un programa que simule, mediante una función
+denominada cuenta, como el ordenador cuenta por pantalla, desde
+0 hasta un número a determinar por el usuario. Dicho número se
+pide en la función principal y se envía a la función cuenta
+por valor, donde se irán imprimiendo. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+</head>
+
+<script>
+
+    function cuenta(num) {
+        for (let i = 0; i <= num; i++) {
+            setTimeout(function () {
+                document.getElementById("resultado").innerHTML = i;
+            }, i * 1000);
+        }
+    }
+
+    function principal(callback) {
+        let num = parseInt(prompt("Ingrese un número:"));
+        callback(num);
+    }
+
+    principal(cuenta);
+
+</script>
+
+<body>
+    <h4> Contador: </h4>
+    <div id="resultado">
+    </div>
+</body>
+
+</html>

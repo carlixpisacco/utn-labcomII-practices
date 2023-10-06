@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 5. Cargar dos números en objetos de tipo text y al presionar un
+botón, mostrar el mayor. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 5</title>
+</head>
+
+<script>
+    function calcularMayor(){
+        num1=parseFloat(document.getElementById('num1').value);
+        num2=parseFloat(document.getElementById('num2').value);
+
+        if (num1>num2){
+            document.getElementById("resultado").innerHTML = "El mayor es " + num1;
+        }else if(num2>num1){
+            document.getElementById("resultado").innerHTML = "El mayor es " + num2;
+        }else{
+            document.getElementById("resultado").innerHTML = "Los numeros son iguales";
+        }
+    }
+</script>
+
+<body>
+    <div>
+        <div>
+            <label for="num1"> Ingrese el primer número:</label>
+            <input type="text" id="num1" name="num1" placeholder="Ingrese un número"/>
+        </div>
+
+        <div>
+            <label for="num2"> Ingrese el segundo número:</label>
+            <input type="text" id="num2" name="num2" placeholder="Ingrese un número"/>
+        </div>
+    
+        <div>
+            <button type="button" onclick="calcularMayor()"> Calcular el mayor</button>
+        </div>
+    </div>
+    <div id="resultado">
+    </div>
+</body>
+
+</html>
